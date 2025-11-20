@@ -2,8 +2,6 @@
 Tools and process
 
 
-
-
 ## Domain:
 
 1. ViewDNS - All in one pg          (https://viewdns.info/)            *
@@ -26,15 +24,41 @@ GitHub - projectdiscovery/public-bugbounty-programs: Community curated list of p
 **Benefit**: Can find working and inactive domains/subdomains.
 
 
+
+
 ## Sub domain:
 1. crt.sh | %.tesla.com (Sub_d finder)
-2. VirusTotal (web)           (https://www.virustotal.com/gui/home/upload)          * 
+2. VirusTotal (web)    (https://www.virustotal.com/gui/home/upload)      * 
 3. Search Web by Domain | Netcraft
 4. Chaos by Projectdiscovery
-5. Subfinder- (kali) API key (1st time)
-6. Amass (kali) 
-8. httpx-toolkit (kali) Active subdomain finding 
-7. One For All- Subdomain finder   Shuffle DNS = Sub Domains( Cloud)      (https://github.com/projectdiscovery/shuffledns)
+(--------------------------------------------------------
+5. Subfinder- (kali) API key (1st time)           ***
+
+Create a file named domains.txt:
+Example:
+google.com
+tesla.com
+amazon.com
+
+Run:
+subfinder -dL domains.txt -o output.txt
+-----------------------------------------------------------)
+6. Amass (kali)
+(-----------------------------------------------------------
+7. httpx-toolkit (kali) To check subdomains are active?
+
+-Find alive subdomains + save everything:
+httpx -l subs.txt -sc -title -ip -o alive_full.txt
+
+-Use with Subfinder directly (no file needed):
+subfinder -d example.com | httpx -o alive.txt
+
+⚠️ IMPORTANT
+httpx cannot discover subdomains by itself. It only checks if domains respond.
+-----------------------------------------------------------)
+
+
+8. One For All- Subdomain finder   Shuffle DNS = Sub Domains( Cloud)      (https://github.com/projectdiscovery/shuffledns)
 
 
 
