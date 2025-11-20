@@ -1,12 +1,11 @@
 # Recon
-Recon- Tools and process
+Tools and process
 
 
 
 
+## Domain:
 
-
-###Domain:
 1. ViewDNS - All in one pg          (https://viewdns.info/)            *
 2. MX Toolbox             (https://mxtoolbox.com/SuperTool.aspx?action=mx%3a32934&run=toolpage#)
 3. Arin Whois             (https://whois.arin.net/ui/)
@@ -24,9 +23,10 @@ Recon- Tools and process
 
 GitHub - projectdiscovery/public-bugbounty-programs: Community curated list of public bug bounty and responsible disclosure programs.
 
+**Benefit**: Can find working and inactive domains/subdomains.
 
 
-###Sub domain:
+## Sub domain:
 1. crt.sh | %.tesla.com (Sub_d finder)
 2. VirusTotal (web)           (https://www.virustotal.com/gui/home/upload)          * 
 3. Search Web by Domain | Netcraft
@@ -35,3 +35,15 @@ GitHub - projectdiscovery/public-bugbounty-programs: Community curated list of p
 6. Amass (kali) 
 8. httpx-toolkit (kali) Active subdomain finding 
 7. One For All- Subdomain finder   Shuffle DNS = Sub Domains( Cloud)      (https://github.com/projectdiscovery/shuffledns)
+
+
+
+
+
+
+
+
+
+
+
+
